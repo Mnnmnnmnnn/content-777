@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文案老虎機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>文案老虎機</h1>
+        <p>想練習 短文/長文/隨筆 的手感嗎？<br>
+           隨機獲得一個主題，寫下你的文字吧<br>
+           祝你在創作的過程，獲得解脫與喜悅！</p>
+        <button onclick="generateTopic()">點一下</button>
+        <div class="output">
+            <div class="category">
+                <h2>類別</h2>
+                <p id="category">出現隨機類別</p>
+            </div>
+            <div class="topic">
+                <h2>主題</h2>
+                <p id="topic">出現對應隨機類別的主題</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
