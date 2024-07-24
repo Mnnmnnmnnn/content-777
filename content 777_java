@@ -1,0 +1,15 @@
+document.getElementById('generateBtn').addEventListener('click', function() {
+    const categories = ['工作', '生活', '別人的事', '心情'];
+    const topics = {
+        '工作': ['主管不ok的故事', '又被同事雷', '中午發現一間不錯的餐廳', '第一次跟同事下班後聚餐', '一個人加班到午夜', '客戶就想不搞定', '說好90天要付款又想拖', '你都說了，哪次能說不ok', '想要找下一份工作的瞬間'],
+        '生活': ['假日睡到下午的一天', '假日凌晨起床為了運動', '又跟朋友混到隔天早上', '女友得狂犬病一直叫', '第一次吃客單價破千的美食，結果…', '一個人去看電影', '做了一頓飯給OO', '富二代爽阿', '看了一部電影結果好想自殺', '想在脆上po的第一篇文'],
+        '別人的事': ['關於我朋友', '關於我爸', '關於我媽', '關於我的上一任對象', '關於那些我不能放感情的人', '關於我鄰居', '發現那位我只追蹤不聯繫的朋友，她/他最近…'],
+        '心情': ['想要爆紅的心情', '如果被名人要line', '想要分手的monent', '跟朋友絕交嗎', '還不如自己尻算了', '好像又長大了一點']
+    };
+
+    const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+    const randomTopic = topics[randomCategory][Math.floor(Math.random() * topics[randomCategory].length)];
+
+    document.getElementById('category').innerText = randomCategory;
+    document.getElementById('topic').innerText = randomTopic;
+});
